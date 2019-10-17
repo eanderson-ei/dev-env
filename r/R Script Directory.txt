@@ -1,0 +1,23 @@
+	* 
+R - Instructions Power Analysis R Script.R: calculates sample requirements and minimum detectable changes for data in the NV CCS GrSG HQTs. Could be improved with direct import from the excel file and should be vetted for appropriate statistical techniques. Saved in Downloads folder.
+	* 
+MWPower.R: used to test sensitivity to number of quadrats collected for milkweed. Indicated 100 was close to appropriate. May be misleading since it assumes that the sample mean is the population mean (i.e., how many quadrats would be required to get an approximation of the the sample mean?).
+	* 
+MWBootstrap2.R uses the boot package to calculate bootstrap confidence intervals for milkweed density only. By using the boot package, the 'Bca' confidence interval method, which is more robust than the percentile method, can be used. Use to sense-check the confidence intervals of other monarch HQT bootstrap confidence interval scripts.
+	* 
+RaincloudPlot.R: attempt to copy raincloud plot. Lead to corrupt packages, requiring re-install of R. Import of source code has been removed since.
+	* 
+HabitatFunctionBootstrapCal.R: runs all bootstrapping to calculate aggregate score confidence intervals for the Monarch HQT v1.1 calculator (supports v1.0 also). Could be improved with reorganization, code comments, and better visualization (split plots simply repeating in upper left instead of displaying in multiple plots in output.
+	* 
+MWBootstrap.R: copy of milkweed subportion of HabitatFunctionBootstrapCalc.R. Deprecate and focus on improving HabitatFunction...
+	* 
+NectarBootstrap.R: copy of nectar subportion of HabitatFunctionBootstrapCalc.R. Deprecate
+	* 
+MonarchHQTReadFile.R: reads in data necessary to run HabitatFunctionBootstrap.R. Reads in all Assessment Area data, whereas HabitatFunction... only runs on one Assessment Area at a time.
+	* 
+MilweedBootstrapReadFile.R: subportion of MonarchHQTReadFile. Deprecate.
+	* 
+NectarBootrstrapReadFile.R: ""
+	* 
+Idaho - Raster output visualizations.R: used to illustrate difference between original and proposed aggregation techniques for Idaho GrSG HQT.
+
